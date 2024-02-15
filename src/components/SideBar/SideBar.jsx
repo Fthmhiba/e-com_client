@@ -12,7 +12,7 @@ function SideBar() {
   }
 
   return (
-    <div className=" rounded-xl bg-blue-400 w-[400px] h-screen ">
+    <div className=" rounded-xl bg-slate-500 w-[400px] h-screen ">
       <ul className="mt-24">
         <li className=" text-lg rounded-xl my-1 w-[90%] m-auto px-9 py-3 hover:bg-slate-100">
           <NavLink to={"/admin/home"}> Home </NavLink>

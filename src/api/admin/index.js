@@ -16,6 +16,7 @@ export const adminLogin = (data)=>{
     }
 } 
 
+
 export const addProducts = (data)=>{
     try {
         return instance.post('/products',data)

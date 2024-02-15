@@ -7,8 +7,13 @@ import Cart from "./admin/Cart/Cart";
 import Orders from "./admin/Orders/Orders";
 import Payment from "./admin/Payment/Payment";
 import Home from "./user/Home/Home";
-import User from "./user/User";
+import User from "./admin/User/User";
 import Protected from "./admin/Protected/Protected";
+import Login from "./user/Login/Login";
+import Register from "./user/Register/Register";
+import Details from "./user/Product_details/Details";
+import PlaceOrder from "./user/PlaceOrder/PlaceOrder";
+import Order from "./user/Orders/Orders";
 
 
 function App() {
@@ -16,6 +21,18 @@ function App() {
     {
       path: "/",
       element: <Home/>,
+    },
+    {
+      path: "/details/:id",
+      element: <Details/>,
+    },
+    {
+      path: "/orders",
+      element: <Order/>,
+    },
+    {
+      path: "/place-order",
+      element: <PlaceOrder/>,
     },
     {
       path: "/admin",
@@ -56,6 +73,15 @@ function App() {
     {
       path: "admin-login",
       element: <AdminLogin />,
+    },
+
+    {
+      path: "user-register",
+      element: <Register/>,
+    },
+    {
+      path: "user-login",
+      element: <Login/>,
     },
   ]);
 
