@@ -9,7 +9,8 @@ console.log(value,'value');
 
   return (
     <div className=''>
-      <h1 className="text-4xl text-center">PRODUCT_DETAILS</h1>
+      <h1 className="text-4xl text-center text-amber-100 ">PRODUCT_DETAILS</h1>
+      <div className="border w-48 p-4 m-8 bg-slate-200   rounded   ">
       <img style={{width:"80px",height:"80px",borderRadius:"50%"}} src={`http://localhost:3000/${value.state.products.profile}`}/> 
       <p>{value.state.products.name}</p>
       <p></p>
@@ -21,6 +22,7 @@ console.log(value,'value');
         <button>Place order</button>
       </div>
       </Link>
+    </div>
     </div>
   )
 }
